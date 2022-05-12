@@ -3,17 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@react-three/drei": "^9.7.1",
+    "@react-three/fiber": "^8.0.13",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^14.1.1",
+    "antd": "^4.20.3",
+    "axios": "^0.27.2",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-postcss": "^9.0.1",
+    "less-plugin-npm-import": "^2.1.0",
     "react": "^18.1.0",
+    "react-css-theme-switcher": "^0.3.0",
     "react-dom": "^18.1.0",
+    "react-hook-form": "^7.31.0",
     "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-spring": "^9.4.5",
+    "three": "^0.140.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "style": "npx gulp less -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,5 +53,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
   }
 }

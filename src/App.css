@@ -1,4 +1,6 @@
-.App {
+@import '~antd/dist/antd.css';
+
+/* .App {
   text-align: center;
 }
 
@@ -36,4 +38,4 @@
   100% {
     transform: translateY(0px);
   }
-}
+} */

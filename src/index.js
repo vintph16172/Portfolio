@@ -5,15 +5,28 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom'
+import { ThemeSwitcherProvider } from "react-css-theme-switcher";
+
+const themes = {
+  dark: `${process.env.PUBLIC_URL}/dark-theme.css`,
+  light: `${process.env.PUBLIC_URL}/light-theme.css`,
+};
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <BrowserRouter>
+      <ThemeSwitcherProvider themeMap={themes} defaultTheme="light">
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </ThemeSwitcherProvider>
+
+    </BrowserRouter>
+
   </React.StrictMode>
 );
 
