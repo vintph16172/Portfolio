@@ -12,6 +12,8 @@
     "@testing-library/user-event": "^14.1.1",
     "antd": "^4.20.3",
     "axios": "^0.27.2",
+    "framer-motion": "^6.3.3",
+    "gsap": "^3.10.4",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-debug": "^4.0.0",

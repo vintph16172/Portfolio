@@ -19,7 +19,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeSwitcherProvider themeMap={themes} defaultTheme="light">
+      <ThemeSwitcherProvider themeMap={themes} defaultTheme="dark">
         <Provider store={store}>
           <App />
         </Provider>
