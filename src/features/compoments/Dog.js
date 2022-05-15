@@ -16,7 +16,7 @@ export default function Model({ ...props }) {
   useFrame((state, delta) => (group.current.rotation.y += 0.01))
   return (
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={2.5}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={2}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[-0.3, 0.09, 0]} scale={0.53}>
             <mesh geometry={nodes.Object_4.geometry} material={materials.fur_light} />

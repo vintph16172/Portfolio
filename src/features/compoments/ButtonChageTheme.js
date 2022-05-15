@@ -12,7 +12,7 @@ export const ButtonChageTheme = () => {
     const toggleTheme = (isChecked) => {
 
         setIsDarkMode(isChecked);
-        switcher({ theme: isChecked ? themes.dark : themes.light });
+        switcher({ theme: isChecked ? themes.light : themes.dark });
     };
 
     // Avoid theme change flicker
@@ -39,8 +39,8 @@ export const ButtonChageTheme = () => {
     return (
         <div>
             <Switch className="bg-gradient-to-r from-sky-500 to-indigo-500"
-                checkedChildren={<MoonIcon style={{ color: 'white', fontSize: '27px' }} />}
-                unCheckedChildren={<SunIcon style={{ color: 'orange', fontSize: '27px' }} />}
+                unCheckedChildren={<MoonIcon style={{ color: 'white', fontSize: '27px' }} />}
+                checkedChildren={<SunIcon style={{ color: 'orange', fontSize: '27px' }} />}
 
                 checked={isDarkMode}
                 onChange={toggleTheme} />
